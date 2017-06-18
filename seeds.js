@@ -6,17 +6,17 @@ var data = [
     {
         name: "Naiguata",
         image: "https://farm8.staticflickr.com/7457/9586944536_9c61259490.jpg",
-        description: "blah blah blah"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet non dui eget elementum. Curabitur semper feugiat arcu sit amet laoreet. Proin et arcu sem. In hac habitasse platea dictumst. Phasellus aliquam non ipsum a sollicitudin. Etiam blandit magna ut justo rhoncus tristique. Aenean accumsan metus ac arcu consectetur venenatis. Nam ac justo non nulla viverra venenatis. Mauris et efficitur est. Proin eget rhoncus sem. Fusce auctor neque a velit scelerisque interdum. Curabitur blandit purus at elit malesuada efficitur. Ut quis ultrices sem, non feugiat enim. Vestibulum facilisis, nibh id luctus fermentum, orci ligula mattis risus, a egestas nulla sapien vitae nunc. Nulla non sodales sapien."
     },
     {
         name: "Restrepo",
         image: "https://farm9.staticflickr.com/8471/8137270056_21d5be6f52.jpg/",
-        description: "blah blah blah"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet non dui eget elementum. Curabitur semper feugiat arcu sit amet laoreet. Proin et arcu sem. In hac habitasse platea dictumst. Phasellus aliquam non ipsum a sollicitudin. Etiam blandit magna ut justo rhoncus tristique. Aenean accumsan metus ac arcu consectetur venenatis. Nam ac justo non nulla viverra venenatis. Mauris et efficitur est. Proin eget rhoncus sem. Fusce auctor neque a velit scelerisque interdum. Curabitur blandit purus at elit malesuada efficitur. Ut quis ultrices sem, non feugiat enim. Vestibulum facilisis, nibh id luctus fermentum, orci ligula mattis risus, a egestas nulla sapien vitae nunc. Nulla non sodales sapien.h"
     },
     {
         name: "Caurimare",
         image: "https://farm6.staticflickr.com/5059/5518252117_d232831997.jpg",
-        description: "blah blah blah"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet non dui eget elementum. Curabitur semper feugiat arcu sit amet laoreet. Proin et arcu sem. In hac habitasse platea dictumst. Phasellus aliquam non ipsum a sollicitudin. Etiam blandit magna ut justo rhoncus tristique. Aenean accumsan metus ac arcu consectetur venenatis. Nam ac justo non nulla viverra venenatis. Mauris et efficitur est. Proin eget rhoncus sem. Fusce auctor neque a velit scelerisque interdum. Curabitur blandit purus at elit malesuada efficitur. Ut quis ultrices sem, non feugiat enim. Vestibulum facilisis, nibh id luctus fermentum, orci ligula mattis risus, a egestas nulla sapien vitae nunc. Nulla non sodales sapien."
     }
 ];
 
