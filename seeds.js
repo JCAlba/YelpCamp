@@ -26,25 +26,25 @@ function seedDB(){
             console.log(err);
         } else {
             data.forEach(function(seed){
-               Campground.create(seed,function(err, campground){
-                   if(err){
-                       console.log(err);
-                   } else {
-                       console.log("added a campground");
-                       Comment.create({
-                           text:"This place is horrible.",
-                           author: "Daddy Yankee"
-                       }, function(err, comment){
-                           if(err){
-                               console.log(err);
-                           } else {
-                               campground.comments.push(comment);
-                               campground.save();
-                               console.log("Created new comment");
-                           }
-                       });
-                   }
-               }) 
+              Campground.create(seed,function(err, campground){
+                  if(err){
+                      console.log(err);
+                  } else {
+                      console.log("added a campground");
+                      Comment.create({
+                          text:"This place is horrible.",
+                          author: "Daddy Yankee"
+                      }, function(err, comment){
+                          if(err){
+                              console.log(err);
+                          } else {
+                              campground.comments.push(comment);
+                              campground.save();
+                              console.log("Created new comment");
+                          }
+                      });
+                  }
+              }) 
             });
             console.log("removed campgrounds");
         }
