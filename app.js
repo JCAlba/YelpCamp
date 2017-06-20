@@ -8,7 +8,8 @@ var express        = require("express"),
     passport       = require("passport"),
     LocalStrategy  = require("passport-local"),
     User           = require("./models/user"),
-    methodOverride = require("method-override");
+    methodOverride = require("method-override"),
+    flash          = require("connect-flash");
     
 var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
@@ -22,6 +23,7 @@ app.use(methodOverride("_method"));
 
 // sedd the database
 // seedDB();
+app.use(flash());
 
 //PASSPORT CONFIGUTARION
 app.use(require("express-session")({
@@ -37,6 +39,8 @@ passport.deserializeUser(User.deserializeUser());
 
 app.use(function(req, res, next){
    res.locals.currentUser = req.user;
+   res.locals.error = req.flash("error");
+   res.locals.success = req.flash("success");
    next();
 });
 

@@ -29,8 +29,10 @@ router.post("/campgrounds", middleware.isLoggedIn, function(req, res){
     //create a new campground a save to DB
     Campground.create(newCampground, function(err, newlyCreated){
         if(err){
+            req.flash("error", "Campground could not be created");
             console.log(err);
         } else {
+            req.flash("success", "Campground successfully posted");
             res.redirect("/campgrounds"); 
         }
     });
@@ -74,11 +76,12 @@ router.put("/campgrounds/:id", middleware.checkCampgroundOwnership, function(req
 // DESTROY CAMPGROUND ROUTE
 router.delete("/campgrounds/:id", middleware.checkCampgroundOwnership, function( req, res){
     Campground.findByIdAndRemove(req.params.id, function(err){
-       if(err){
+        if(err){
             res.redirect("/campgrounds");
-       } else {
+        } else {
+            req.flash("success","Campground deleted!");
             res.redirect("/campgrounds");
-       }
+        }
     });
 });
 
