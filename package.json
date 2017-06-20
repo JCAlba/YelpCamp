@@ -1,7 +1,8 @@
 {
   "name": "yelpcamp",
   "version": "1.0.0",
-  "description": "Social Network for campers",
+  "description": "This project is a campground rent website where users can upload their campsites, add descriptions stablish a price for rental. Other users can then comment on the posted campgrounds. The main tools used in this project were: Cloud9 environment, NodeJs, MongoDb, Express. This project was taken from the Udemy course: The Web Development Bootcamp. By Colt Steele.
+",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
